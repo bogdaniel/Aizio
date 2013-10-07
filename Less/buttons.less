@@ -1,0 +1,55 @@
+.create-button(@font-to-use: @base-button-font-family, @color-to-use: @base-button-color, @hover-color: @base-button-hover-color, @active-color: @base-button-active-color, @background-color: @base-button-background-color, @font-size: @base-button-font-size) {
+    font-family: @font-to-use;
+    display: block;
+    color: @color-to-use;
+    text-decoration: none;
+    text-align: center;
+    font-size: @font-size;
+    text-transform: uppercase;
+    background: @background-color;
+    border: 0px none;
+    outline: 0px none;
+    &:hover {
+        background: @hover-color;
+    }
+    
+    &:active {
+        background: @active-color;
+    }
+}
+.button {
+    .create-button();
+}
+.button-group {
+    position :relative;
+    display: inline-block;
+    *display: inline;
+    *zoom:1;
+    font-size: @base-font-size;
+    vertical-align: middle;
+    white-space: nowrap;
+    *margin-left: .3em;
+}
+.button-group:first-child {
+    *margin-left: 0;
+}
+.button-group:first-child {
+    *margin-left: 0;
+}
+.button-group +.button-group {
+    margin-left: 5px;
+}
+.button-group, .button {
+    display: inline-block;
+}
+.input-append .input-prepend {
+    width: 25px;
+
+}
+.add-on {
+    float: left;
+    border-width: 1px 0px 1px 1px;
+    border-color: #ccc;
+    border-style: solid;
+    padding: 7px;
+}

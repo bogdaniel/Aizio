@@ -1,0 +1,100 @@
+p, small {
+    font-family: @base-font-family;
+}
+// Links
+a {
+    color: @base-link-color;
+    text-decoration: none;
+    &:hover {
+        color: @base-link-color-hover;
+        text-decoration: underline;
+        outline: none;
+    }
+}
+// Fix headline margins placed out side of columns
+h1, h2, h3, h4, h5, h6 {
+    color: @headings-font-color;
+    font-family:@headings-font-family;
+    font-weight:@headings-font-weight;
+    font-style: @headings-font-style;
+    margin-top: @base-line-height;
+    text-rendering: @headings-text-rendering;
+}
+h1 {
+    .font-size(@headings-font-h1-size);
+}
+h2 {
+    .font-size(@headings-font-h2-size);
+}
+h3 {
+    .font-size(@headings-font-h3-size);
+}
+h4 {
+    .font-size(@headings-font-h4-size);
+}
+h5 {
+    .font-size(@headings-font-h5-size);
+}
+h6 {
+    .font-size(@headings-font-h6-size);
+}
+.col-group h1, .col-group h2, .col-group h3, .col-group h4, .col-group h5, .col-group h6 {
+	margin-right: @gutterWidth / 2;
+	margin-left: @gutterWidth / 2;
+}
+
+.col-content h1, .col-content h2, .col-content h3, .col-content h4, .col-content h5, .col-content h6 {
+	margin-right: 0;
+	margin-left: 0;
+}
+blockquote {
+    background: #f9f9f9;
+    border-left: 10px solid #ccc;
+    margin: 1.5em 10px;
+    padding: .5em 10px;
+    quotes: "\201C""\201D""\2018""\2019";
+}
+blockquote:before {
+    color: #ccc;
+    content: open-quote;
+    font-size: 4em;
+    line-height: .1em;
+    margin-right: .25em;
+    vertical-align: -.4em;
+}
+blockquote {
+    display: inline;
+}
+/* align checkboxes, radios, text inputs with their label */
+//input[type="radio"] { vertical-align: text-bottom; }
+//input[type="checkbox"] { vertical-align: bottom; *vertical-align: baseline; }
+//.ie6 input { vertical-align: text-bottom; }
+sup, sub {
+    vertical-align: baseline;
+    position: relative;
+    top: -0.4em;
+}
+sub { top: 0.4em; }
+
+/* This snippet simply makes the text wrap when it reaches the walls of its container, in this case, the pre tag, whilst still preserving line breaks and white space cross browser. */
+pre {
+    .paddings(15px);
+    white-space: pre; /* CSS2 */
+    white-space: pre-wrap; /* CSS 2.1 */ /* Chrome & Safari */
+    white-space: pre-line; /* CSS 3 (and 2.1 as well, actually) */
+    white-space: -moz-pre-wrap;  /* Mozilla since 1999 */
+    white-space: -o-pre-wrap;    /* Opera 7 */
+    word-wrap: break-word; /* Internet Explorer 5.5+ */
+}
+
+form {
+    .simple-form(@base-font-size);
+}
+
+img {
+    max-width: 100%;
+    width: 100%;
+}
+a img {
+    border: none
+}

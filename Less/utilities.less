@@ -1,0 +1,77 @@
+.font-size(@target-px-size, @context-px-size: @base-font-size) {
+    font-size: @toEm;
+    font-size: @toRem;
+    .rem(@target-px-size, @context-px-size);
+}
+.paddings(@target-px-size) {
+    padding: @toEm;
+    padding: @toRem;
+    .rem(@target-px-size);
+}
+.padding-right(@target-px-size) {
+    padding-right: @toEm;
+    padding-right: @toRem;
+    .rem(@target-px-size);
+}
+.padding-left(@target-px-size) {
+    padding-left: @toEm;
+    padding-left: @toRem;
+    .rem(@target-px-size);
+}
+.padding-top(@target-px-size) {
+    padding-top: @toEm;
+    padding-top: @toRem;
+    .rem(@target-px-size);
+}
+.padding-bottom(@target-px-size) {
+    padding-bottom: @toEm;
+    padding-bottom: @toRem;
+    .rem(@target-px-size);
+}
+// Rem Calculator
+.rem(@target-px-size, @context-px-size: @base-font-size) {
+    @divide-By: unit(@context-px-size);
+    @sizeValue: unit(@target-px-size);
+    @remValue: round(@sizeValue / @divide-By * 10000) / 10000;
+    @toEm: unit(@sizeValue, px);
+    @toRem: unit(@remValue, rem);
+}
+/**
+ * A mixin that displays a bunch of horizontal horizontal lines
+ * spaced according to the vertical rhythm unit
+ */
+.vertical-grid(@unit: @base-line-height, @color: #ddd) {
+    @stop: 100% - 100% / @unit;
+    background: -webkit-gradient(linear, left top, left bottom, from(white), color-stop(100% - 100% / @unit, white), color-stop(100% - 100% / @unit, @color), to(@color));
+    background: -moz-linear-gradient(top, white, white @stop, @color @stop,  @color);
+    background-size: auto @unit;
+}
+// Box sizing
+.box-sizing(@box-model) {
+  -webkit-box-sizing: @box-model; // Safari <= 5
+     -moz-box-sizing: @box-model; // Firefox <= 19
+          box-sizing: @box-model;
+}
+/**
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    contenteditable attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that are clearfixed.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ * For IE 6/7 only *zoom 1
+ * Include this rule to trigger hasLayout and contain floats
+ */
+.clearfix() {
+    zoom: 1;
+    &:before { 
+        content: '';  /* 1 */
+        display: block;  /* 2 */
+    }
+    &:after {
+        content: ''; 
+        display: table; 
+        clear: both; 
+    }
+}

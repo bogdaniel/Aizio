@@ -1,0 +1,336 @@
+
+<script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-javascript lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-javascript lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-javascript lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-javascript"> <!--<![endif]-->
+<html lang="en">
+<head id="www-sitename-com">
+  <meta charset="utf-8">
+  <!-- Always force latest IE rendering engine (even in intranet) & Chrome Frame -->
+  <meta content="IE=edge, chrome=1" http-equiv="X-UA-Compatible">
+  <meta content="" name="title">
+  <meta content="" name="description">
+  <!-- Google will often use this as its description of your page/site. Make it good. -->
+  <meta content="" name="google-site-verification">
+  <!-- Speaking of Google, don't forget to set your site up: http://google.com/webmasters -->
+  <title>EdgeCode Framework Template</title>
+  <meta content="Your Name Here" name="author">
+  <meta content="Copyright Your Name Here 2011. All Rights Reserved." name="Copyright">
+  <!--  Mobile Viewport Fix j.mp/mobileviewport & davidbcalhoun.com/2010/viewport-metatag 
+  device-width : Occupy full width of the screen in its current orientation
+  initial-scale = 1.0 retains dimensions instead of zooming out if page height> device height
+  maximum-scale = 1.0 retains dimensions instead of zooming in if page width <device width -->
+  <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0" name="viewport">
+  <link href="_/img/favicon.ico" rel="shortcut icon">
+  <!-- This is the traditional favicon.
+  - size: 16x16 or 32x32
+  - transparency is OK
+  - see wikipedia for info on browser support: http://mky.be/favicon/ -->
+  <link href="_/img/apple-touch-icon.png" rel="apple-touch-icon">
+  <!-- The is the icon for iOS's Web Clip.
+  - size: 57x57 for older iPhones, 72x72 for iPads, 114x114 for iPhone4's retina display (IMHO, just go ahead and use the biggest one)
+  - To prevent iOS from applying its styles to the icon name it thusly: apple-touch-icon-precomposed.png
+  - Transparency is not recommended (iOS will put a black BG behind the icon) -->
+   <!-- Here it goes the CSS files -->
+   <link href="Css/Aizio.css" rel="stylesheet">
+   <link href="Css/navigation.css" rel="stylesheet">
+   <link href="Css/custom.css" rel="stylesheet">
+   <!-- Here we load modernizr -->
+   <script src="Javascript/vendor/modernizr-2.6.2-respond-1.1.0.min.js"></script>
+   <link href='http://fonts.googleapis.com/css?family=Cinzel+Decorative' rel='stylesheet' type='text/css'>
+   <style type="text/css">
+   .margin-top {
+    margin-top: 40px;
+   }
+   .margin-top-100 {
+    margin-top: 100px;
+   }
+   .font-cinzel {
+    font-family: 'Cinzel Decorative', cursive;
+    font-size: 2.5em;
+    font-weight: bold;
+    line-height: 1.5em;
+    text-align: center;
+   }
+   .font-cinzel:hover {
+    color: #434343;
+   }
+   h4 span {
+    vertical-align: middle;
+    line-height: 1.5em;
+    padding-right: .3em;
+    display: inline-block;
+    color: #ddd;
+   }
+   footer {
+    margin-top: 60px;
+   }
+   footer span {
+    vertical-align: middle;
+    line-height: 1.5em;
+    padding-right: .3em;
+    display: inline-block;
+    color: #ddd;
+   }
+   h4 span:hover {
+    color: #434343;
+   }
+   .col-content p {
+    font-family: Georgia, Cambria, "Times New Roman", Times, serif;
+   }
+   footer span {
+    font-size: 2em;
+   }
+   footer span:hover {
+    color: #434343;
+   }
+   footer h1, footer h2, footer h3, footer h4, footer h5, footer h6 {
+    color: #ddd;
+   }
+    footer h1:hover, footer h2:hover, footer h3:hover, footer h4:hover, footer h5:hover, footer h6:hover {
+      color: #434343;
+   }
+   footer {
+    text-align: center;
+   }
+   .inactive-dropdown ul {
+    display: none;
+   }
+   .active-dropdown ul {
+    display: block;
+    position: absolute;
+   }
+   .active-dropdown {
+    background: #1f2024;
+    -webkit-border-radius: 0 0 5px 5px;
+    -moz-border-radius: 0 0 5px 5px;
+    border-radius: 0 0 5px 5px;
+   list-style: none;
+   -webkit-transition: opacity .25s ease .1s;
+   -moz-transition: opacity .25s ease .1s;
+   -o-transition: opacity .25s ease .1s;
+   -ms-transition: opacity .25s ease .1s;
+   transition: opacity .25s ease .1s;
+   }
+   .active-dropdown li {
+    display: list-item;
+    float: left;
+    clear: both;
+    background-color: #2aa4cf;
+    width: 160px;
+    position: relative;
+    -webkit-transition: height .25s ease .1s;
+    -moz-transition: height .25s ease .1s;
+    -o-transition: height .25s ease .1s;
+    -ms-transition: height .25s ease .1s;
+    transition: height .25s ease .1s;
+   }
+
+   .active-dropdown li a {
+    display: block;
+    width: 100%;
+    color: #fff;
+    display: inline-block;
+    text-align: left;
+    text-decoration: none;
+    line-height: 1.5em;
+    padding-left: 1.5em;
+    padding-right: 1.5em;
+   }
+   </style>
+   <body>
+    <!--[if lt IE 7]>
+      <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
+    <![endif]-->
+    <!-- Header -->
+    <header role="banner">
+      <div class="navbar fixed-top navbar-theme-blue-marina">
+        <div class="inner-navbar">
+          <a href="#" class="brand pull-left">Aizio</a>
+          <div class="page">
+            <nav id="menu" class="nav" role="navigation">
+              <ul>
+                <li><a  href="#" id="menutoggle" class="navtoggle" title=""><span><i aria-hidden="true"  class="icon-home"></i></span>Home</a>
+                </li>
+                <li class="inactive-dropdown" id="dropdown" >
+                  <a href="#" title=""><span><i aria-hidden="true" class="icon-home"></i></span>Docs</a>
+                  <ul class="nav">
+                    <li>
+                      <a href="#" title=""><span><i aria-hidden="true" class="icon-code"></i></span>ssss</a></li> 
+                    <li>
+                      <a  href="#" title=""><span><i aria-hidden="true" class="icon-qrcode"></i></span>Portfolio</a></li>
+                    <li>
+                      <a  href="#" title=""><span><i aria-hidden="true" class="icon-print"></i></span>Blog</a> </li>
+                    <li>
+                      <a  href="#" title=""><span><i aria-hidden="true" class="icon-heart"></i></span>The  team</a></li>
+                    <li><a  href="#" title=""><span><i aria-hidden="true" class="icon-envelope"></span></i>Contact</a></li>
+                  </ul>
+                </li>
+                <li><a  href="#" title=""><span><i aria-hidden="true" class="icon-qrcode"></i></span>Portfolio</a></li>
+                <li><a  href="#" title=""><span><i aria-hidden="true" class="icon-print"></i></span>Blog</a> </li>
+                <li><a  href="#" title=""><span><i aria-hidden="true" class="icon-heart"></i></span>The  team</a></li>
+                <li><a  href="#" title=""><span><i aria-hidden="true" class="icon-envelope"></span></i>Contact</a></li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </div>
+      <div class="page margin-top-100">
+        <section class="col-group">
+          <article class="col-8 col-offset-2">
+            <div class="col-content">
+              <h4 class="font-cinzel">A good starting point for people who just started using a bunch of css styles</h4>
+            </div>
+          </article>
+        </section>
+      </div>
+    </header>
+    <div class="page margin-top">
+      <section class="col-group">
+        <article class="col-4">
+          <div class="col-content">
+            <h4><span aria-hidden="true" class="icon-desktop"></span>Responsive</h4>
+            <p>Aizio is almost responsive you still need to write your own custom styles only a part of it is responsive and we try to keep it that way. I consider that every designer or developer should take care itself for somethings... but others leave it for Aizio.</p>
+          </div>
+        </article>
+        <article class="col-4">
+          <div class="col-content">
+            <h4><span aria-hidden="true" class="icon-road"></span>Easy To Use</h4>
+            <p>The markup of the code is very easy to use and i try to keep it that way. Most of the plugins that come with Aizio aren't in the official build since i don't want to give you something that you won't use it, instead i will give you the option to choose what you need to use in your projects. </p>
+          </div>
+        </article>
+        <article class="col-4">
+          <div class="col-content">
+            <h4><span aria-hidden="true" class="icon-home"></span>Use What YOU Need</h4>
+            <p>Everything you need you can find here. If not i will build it for you, or you can build it for us and share it with everyone. There will be a section where anyone can upload a certain style that can be used with Aizio so everyone can say thanks and love the guy who made or girl :-) </p>
+          </div>
+        </article>
+        <article class="col-4">
+          <div class="col-content">
+            <h4><span aria-hidden="true" class="icon-th"></span>Old Good Grid</h4>
+            <p>That's right it comes with it's own grid made by <a href="http://fluidable.com/" target="_blank" />Andri Sigurðsson</a>. Very easy and simple to use, and for me was a break point when it came to grids since i didn't quite understand how they are build but after reading his code i finally understood. </p>
+          </div>
+        </article>
+        <article class="col-4">
+          <div class="col-content">
+            <h4><span aria-hidden="true" class="icon-random"></span>Plugins</h4>
+            <p>Aizio comes with few things build in the rest you can check out in plugins section and from there start building something custom. I don't want to offer you a bloated css file with things that you might not use at all.</p>
+          </div>
+        </article>
+        <article class="col-4">
+          <div class="col-content">
+            <h4><span aria-hidden="true" class="icon-bolt"></span>Templates</h4>
+            <p>It comes with a collection of basic layouts that you can style the way you want, but in the end it offers you the ground ups for building great layouts very fast, or showing your client few models of data structure.</p>
+          </div>
+        </article>
+      </section>
+    <footer>
+      <section class="col-group">
+        <article class="col-12">
+          <div class="col-content">
+            <h4>Powered By</h4>
+            <article class="col-4 col-offset-2">
+              <div class="col-content">
+                <h1><span aria-hidden="true" class="icon-css3"></span>CSS3</h1>
+              </div>
+            </article>
+            <article class="col-4">
+              <div class="col-content">
+                <h1><span aria-hidden="true" class="icon-html5"></span>HTML5</h1>
+              </div>
+            </article>
+          </div>
+        </article>
+      </section>
+    </footer>
+    </div>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="Javascript/vendor/jquery-1.10.1.min.js"><\/script>')</script>
+    <script src="javascript/plugins.js"></script>
+    <script src="javascript/main.js"></script>
+    <script>
+      var _gaq=[['_setAccount','UA-XXXXX-X'],['_trackPageview']];
+      (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+        g.src='//www.google-analytics.com/ga.js';
+        s.parentNode.insertBefore(g,s)}(document,'script'));
+    </script>
+    <script>
+(function(root) {
+
+    var elements = {};
+
+    function s(id) {
+        if (!elements[id]) {
+            elements[id] = document.getElementById(id);
+        }
+        return elements[id];
+    }
+
+    function bindUIActions() {
+        menuElements();
+        s('dropdown').onclick = function(e) {
+            goDropDown();
+            
+            e.stopPropagation();
+        };
+        s('menu').onclick = function(e) {
+            goResponsive();
+
+            e.stopPropagation();
+        };
+        //hideMenu();
+    }
+
+    function menuElements() {
+        var menuElements = s('menu');
+        menuElements.insertAdjacentHTML('afterBegin','<button type="button" id="menutoggle" class="navtoogle button" aria-hidden="true"><i aria-hidden="true" class="icon-coffee"> </i> Menu</button>');
+    }
+
+    function hideMenu() {
+        document.onclick = function(e) {
+            var mobileButton = s('menutoggle');
+            var buttonStyle = mobileButton.currentStyle
+                ? mobileButton.currentStyle.display
+                : getComputedStyle(mobileButton, null).display;
+            if (buttonStyle === 'block'
+             && e.target !== mobileButton
+             && new RegExp(' ' + 'active' + ' ').test(' ' + mobileButton.className + ' ')) {
+                changeClass(mobileButton, 'navtoogle active', 'navtoogle');
+            }
+        }
+    }
+    function hasClass(element, cls) {
+      return (' ' + element.className + ' ').indexOf(' ' + cls + ' ') > -1;
+    }
+    function changeClass(r, className1 , className2) {
+        var regex = new RegExp("(?:^|\\s+)" + className1 + "(?:\\s+|$)");
+        if (regex.test(r.className)) {
+            r.className = r.className.replace(regex, ' '+ className2 + ' ');
+        } else {
+            r.className = r.className.replace(new RegExp("(?:^|\\s+)" + className2 + "(?:\\s+|$)"),' '+ className1 +' ');
+        }
+        return r.className;
+    }
+
+    function goResponsive() {
+        //  Toggle the class on click to show / hide the menu
+        changeClass(s('menutoggle'), 'navtoogle active', 'navtoogle');
+    }
+
+    function goDropDown() {
+        changeClass(s('dropdown'), 'inactive-dropdown', 'active-dropdown');
+    }
+
+    root.NavigationWidget = {
+        init: function() {
+            bindUIActions();
+        }
+    };
+
+})(this);
+NavigationWidget.init();
+    </script>
+   </body>
+ </html>

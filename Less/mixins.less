@@ -1,0 +1,181 @@
+.clear {
+    clear: both;
+}
+.pull-left {
+    float: left;
+}
+.pull-right {
+    float: right;
+}
+.text-left {
+    text-align: left;
+}
+.text-right {
+    text-align: right;
+}
+.text-center {
+    text-align: center;
+}
+.text-justify {
+    text-align: justify;
+}
+.bold {
+    font-weight: bold;
+}
+.italic {
+    font-style: italic;
+}
+.underline {
+    border-bottom: 1px solid;
+}
+.highlight {
+    background: #ffc;
+}
+.img-left {
+    float: left;
+    margin: 4px 10px 4px 0;
+}
+.img-right {
+    float: right;
+    margin: 4px 0 4px 10px
+;}
+.no-padding {
+    padding: 0;
+}
+.no-margin {
+    margin: 0;
+}
+.no-indent {
+    margin-left: 0;
+    padding-left: 0;
+}
+.no-bullet {
+    list-style: none;
+    list-style-image: none;
+}
+.display-block {
+    display: block;
+}
+.display-inline {
+    display: inline;
+}
+.fixed-top {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+/*
+ * Togle Content
+ */
+.hide {
+    display: none;
+}
+.show {
+    display: block;
+}
+/*
+ * Togle Visibility
+ */
+.invisible {
+    visibility: hidden;
+}
+.black-10 {
+    background-color: @black-10;
+}
+.black-20 {
+    background-color: @black-20;
+}
+.black-30 {
+    background-color: @black-30;
+}
+.black-40 {
+    background-color: @black-40;
+}
+.black-50 {
+    background-color: @black-50;
+}
+.black-60 {
+    background-color: @black-60;
+}
+.black-70 {
+    background-color: @black-70;
+}
+.black-80 {
+    background-color: @black-80;
+}
+.black-90 {
+    background-color: @black-90;
+}
+.brand-primary {
+    background-color: @brand-primary;
+}
+.brand-success {
+    background-color: @brand-success;
+}
+.brand-warning {
+    background-color: @brand-warning;
+}
+.brand-danger  {
+    background-color: @brand-danger;
+}
+.brand-info    {
+    background-color: @brand-info;
+}
+// Add polaroid-esque trim
+.img-polaroid {
+    padding: 4px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border: 1px solid rgba(0,0,0,.2);
+    .box-shadow(0 1px 3px rgba(0,0,0,.1));
+}
+/*
+ * CSS image replacement
+ * -------------------------
+ * Source: https://github.com/h5bp/html5-boilerplate/commit/aa0396eae757
+ */
+.hide-text {
+    font: 0px/0 a;
+    color: transparent;
+    text-shadow: none;
+    background-color: transparent;
+    border: 0;
+}
+/**
+ * There are also some base styles that needs to be set on background elements.
+ * Few things are happening here. The background is set not to repeat and aligned centered both vertically and horizontally.
+ * The background-size attribute is also set to cover so the background scales according to the size of the container, this is ideal for this use case.
+ */
+.background-element {
+    background-repeat: no-repeat;
+    background-position: center center; 
+ 
+    -webkit-background-size:cover;
+    -moz-background-size:cover;
+    -o-background-size:cover;
+    background-size:cover;
+}
+
+/**
+ * For fun we could also set the background image to position fixed so it will not scroll as the user scrolls the page.
+ */
+.background-element-fixed {
+    background-attachment: fixed;
+}
+
+/*
+ * Fullscreen Backgrounds With CSS3
+ */
+.background-image(@image) {
+    background: url('@image') no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+/* Center a block */
+.center-block {
+    display: block;
+    margin: 0 auto;
+}

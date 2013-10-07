@@ -1,0 +1,117 @@
+/*  ------------------------------  RESPONSIVE STYLES ----------------------------------------------------*/
+
+
+@media screen and (max-width: 1024px) {
+}
+
+
+/*Styles for screen 768px and lower*/
+
+@media screen and (max-width: 768px) {
+    .active-dropdown {
+        position: relative;
+        display: block;
+    }
+
+    .active-dropdown li a {
+        text-align: center;
+    }
+    .inner-navbar nav li {
+        width: 50%;
+        float: left;
+        position: relative;
+        border-left: 0 solid #666;
+    }
+
+    .inner-navbar nav li a {
+        border-left: 0;
+        padding: 10px 0;
+        background: #383838;
+    }
+    
+    .inner-navbar nav li a:hover {
+        background: #636363;
+    }
+
+    .inner-navbar nav a {
+        text-align: center;
+        width: 100%;
+    }
+}
+
+
+@media only screen and (max-width : 600px) {
+}
+
+/*Styles for screen 515px and lower*/
+
+@media only screen and (max-width : 480px) {
+    .inner-navbar nav {
+        border-bottom: 0;
+    }
+    .inner-navbar nav li {
+        width: 100%;
+        float: none;
+        position: relative;
+        border-left: 0 solid #666;
+        
+    }
+    
+    .inner-navbar nav li a {
+        border-bottom: 1px solid #0c0a0d;
+    }
+
+    .inner-navbar nav button#responsiveToggle {
+        display: block;
+        background-color: #242424;
+        width: 100%;
+        position: relative;
+    }
+
+    .inner-navbar nav button#responsiveToggle {
+        .clearfix();
+    }
+
+    /* When JavaScript is enabled, we hide the menu */
+    .js .inner-navbar nav .inactive-responsive {
+        max-height: 0;
+        overflow: hidden;
+        display: block;
+    }
+
+    /* Displaying the menu when the user has clicked on the button */
+    .js .inner-navbar nav .active-responsive {     
+    }
+    .active-responsive a:hover {
+        font-size: 2em;
+        opacity: .5;
+        .transition(opacity .25s ease-in);
+    }
+    .active-responsive a:hover i {
+        display: none;
+    }
+}
+
+/*Smartphone*/
+@media only screen and (max-width : 320px) {
+    .active-dropdown li {
+        display: block;
+        float: none;
+        width: 100%;
+    }
+    .inner-navbar nav li {
+        display: block;
+        float: none;
+        width: 100%;
+    }
+    .inner-navbar nav li a {
+        border-bottom: 1px solid #0c0a0d;
+    }
+}
+
+/* RETINA */
+
+@media 
+(-webkit-min-device-pixel-ratio: 2), 
+(min-resolution: 192dppx) { 
+}
