@@ -1,12 +1,8 @@
 @import "../plugin-config.less";
-// Custom CSS
-body {
-    background-color: #fff;
-}
-
+@import "navigation.less";
 .navbar [class^="icon-"], [class*=" icon-"] {
   display: block;
-  font-size: 2em;
+  font-size: @navbar-icon-font-size;
   line-height: @toEm;
   line-height: @toRem;
   .rem(@base-line-height);
@@ -15,7 +11,7 @@ body {
 }
 
 .navbar {
-    background-color: @black-70;
+    background-color: @navbar-background;
     width: 100%;
     .box-shadow(0 0 0.9em #555);
 }
@@ -39,9 +35,9 @@ body {
 }
 
 .inner-navbar .brand:hover {
-    color: @black-90;
+    color: @brand-hover-color;
     text-decoration: none;
-    background-color: #1c87ad;
+    background-color: @brand-background-color;
     .transition(background 0.6s ease-in-out);
 }
 

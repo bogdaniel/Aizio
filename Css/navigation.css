@@ -72,9 +72,6 @@
   border-style: solid;
   padding: 7px;
 }
-body {
-  background-color: #fff;
-}
 .navbar [class^="icon-"],
 [class*=" icon-"] {
   display: block;
