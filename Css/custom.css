@@ -14,9 +14,22 @@
   margin-bottom: 2em;
   font-size: 0.75em;
   line-height: 1em;
-  padding: 1em;
+  padding: 1em 0px;
   color: #ffffff;
   text-transform: uppercase;
   font-weight: 800;
   font-family: "Open Sans", Helvetica, Arial, Sans-serif;
+}
+.label {
+  display: inline;
+  padding: .25em .6em;
+  font-size: 75%;
+  font-weight: 500;
+  line-height: 1;
+  color: #fff;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  background-color: #999;
+  border-radius: .25em;
 }
