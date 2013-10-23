@@ -88,7 +88,7 @@
   box-shadow: 0 0 0.9em #555555;
 }
 .inner-navbar .brand {
-  color: #fff;
+  color: #ffffff;
   font-size: 36px;
   font-size: 2.25rem;
   line-height: 1.5em;
@@ -218,9 +218,6 @@ nav a.selected:hover {
   padding-right: 1.5em;
 }
 /*  ------------------------------  RESPONSIVE STYLES ----------------------------------------------------*/
-@media screen and (max-width: 1024px) {
-  
-}
 /*Styles for screen 768px and lower*/
 @media screen and (max-width: 768px) {
   .active-dropdown {
@@ -249,9 +246,6 @@ nav a.selected:hover {
     width: 100%;
   }
 }
-@media only screen and (max-width: 600px) {
-  
-}
 /*Styles for screen 515px and lower*/
 @media only screen and (max-width: 480px) {
   .inner-navbar nav {
@@ -278,10 +272,8 @@ nav a.selected:hover {
   .inner-navbar nav button#responsiveToggle:before {
     content: '';
     /* 1 */
-  
     display: block;
     /* 2 */
-  
   }
   .inner-navbar nav button#responsiveToggle:after {
     content: '';
@@ -324,21 +316,12 @@ nav a.selected:hover {
   }
 }
 /* RETINA */
-@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dppx) {
-  
-}
 /*  ------------------------------  RESPONSIVE STYLES ----------------------------------------------------*/
-@media screen and (max-width: 1024px) {
-  
-}
 /*Styles for screen 768px and lower*/
 @media screen and (max-width: 768px) {
   .inner-navbar .brand {
     display: none;
   }
-}
-@media only screen and (max-width: 600px) {
-  
 }
 /*Styles for screen 515px and lower*/
 @media only screen and (max-width: 480px) {
@@ -354,10 +337,8 @@ nav a.selected:hover {
   .inner-navbar nav button#responsiveToggle:before {
     content: '';
     /* 1 */
-  
     display: block;
     /* 2 */
-  
   }
   .inner-navbar nav button#responsiveToggle:after {
     content: '';
@@ -370,8 +351,11 @@ nav a.selected:hover {
   .inner-navbar .brand {
     display: block;
   }
+  .pull-left {
+    float: none;
+  }
+  .pull-right {
+    float: none;
+  }
 }
 /* RETINA */
-@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dppx) {
-  
-}

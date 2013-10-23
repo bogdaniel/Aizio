@@ -1,5 +1,5 @@
 @import "../plugin-config.less";
-@import "navigation.less";
+@import "navigation-config.less";
 .navbar [class^="icon-"], [class*=" icon-"] {
   display: block;
   font-size: @navbar-icon-font-size;
@@ -17,7 +17,7 @@
 }
 
 .inner-navbar .brand {
-    color: #fff;
+    color: @brand-font-color;
     .font-size(36px);
     line-height: 1.5em;
     .padding-left(24px);
