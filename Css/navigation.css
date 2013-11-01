@@ -135,7 +135,7 @@ sup {
   font-size: .5em;
 }
 .inner-navbar .brand:hover {
-  color: #383838;
+  color: #004b67 /*#383838 */;
   text-decoration: none;
 }
 .navbar-inner {
@@ -143,6 +143,15 @@ sup {
 }
 .navbar-theme-blue-marina {
   background: #2aa4cf;
+}
+.navbar-theme-aizio-background {
+  background: #004b67;
+}
+.navbar-theme-aizio-background ul li a:hover {
+  color: #b2e558;
+}
+.navbar-theme-aizio-background .brand:hover {
+  color: #b2e558;
 }
 .inner-navbar nav {
   display: block;
