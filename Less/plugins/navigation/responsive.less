@@ -63,9 +63,7 @@
 
     .inner-navbar nav button#responsiveToggle {
         display: block;
-        background-color: #242424;
         width: 100%;
-        position: relative;
     }
 
     .inner-navbar nav button#responsiveToggle {
@@ -74,9 +72,7 @@
 
     /* When JavaScript is enabled, we hide the menu */
     .js .inner-navbar nav .inactive-responsive {
-        max-height: 0;
-        overflow: hidden;
-        display: block;
+        display: none;
     }
 
     /* Displaying the menu when the user has clicked on the button */
@@ -89,6 +85,9 @@
     }
     .active-responsive a:hover i {
         display: none;
+    }
+    .fixed-top {
+        position: relative;
     }
 }
 

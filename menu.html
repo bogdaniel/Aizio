@@ -21,7 +21,8 @@
   device-width : Occupy full width of the screen in its current orientation
   initial-scale = 1.0 retains dimensions instead of zooming out if page height> device height
   maximum-scale = 1.0 retains dimensions instead of zooming in if page width <device width -->
-  <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0" name="viewport">
+  <meta name="HandheldFriendly" content="True">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
   <link href="_/img/favicon.ico" rel="shortcut icon">
   <!-- This is the traditional favicon.
   - size: 16x16 or 32x32
@@ -39,6 +40,11 @@
    <script src="Javascript/vendor/modernizr-2.6.2-respond-1.1.0.min.js"></script>
    <link href='http://fonts.googleapis.com/css?family=Cinzel+Decorative' rel='stylesheet' type='text/css'>
    <style type="text/css">
+   .active-dropdown i {
+    float: left;
+    clear: right;
+    font-size: 1rem;
+   }
    </style>
    <body>
     <!--[if lt IE 7]>
@@ -48,15 +54,15 @@
     <header role="banner">
       <div class="navbar fixed-top navbar-theme-blue-marina">
         <div class="inner-navbar">
-          <a href="#" class="brand pull-right">Text Here</a>
+          <a href="#" class="brand pull-right">Aizio<sub>framework</sub></a>
           <div class="container">
             <nav id="menu" class="nav" role="navigation">
               <ul class="inactive-responsive" id="inactive-responsive">
                 <li><a  href="#" id="menutoggle" class="navtoggle" title=""><span><i aria-hidden="true"  class="icon-home"></i></span>Home</a>
                 </li>
                 <li class="inactive-dropdown" id="dropdownToggle" >
-                  <a href="#" title=""><span><i aria-hidden="true" class="icon-home"></i></span>Docs</a>
-                  <ul class="inactive-dropdown" id="inactive-dropdown">
+                  <a href="#" title=""><span><i aria-hidden="true" class="icon-signal"></i></span>Docs</a>
+                  <ul class="inactive-dropdown vertical-navigation" id="inactive-dropdown">
                     <li>
                       <a href="#" title=""><span><i aria-hidden="true" class="icon-code"></i></span>ssss</a></li> 
                     <li>
@@ -68,8 +74,8 @@
                     <li><a  href="#" title=""><span><i aria-hidden="true" class="icon-envelope"></span></i>google.ro</a></li>
                   </ul>
                 </li>
-                <li><a  href="#" title=""><span><i aria-hidden="true" class="icon-qrcode"></i></span>Portfolio</a></li>
-                <li><a  href="#" title=""><span><i aria-hidden="true" class="icon-print"></i></span>Blog</a> </li>
+                <li><a  href="#" title=""><span><i aria-hidden="true" class="icon-cog"></i></span>Portfolio</a></li>
+                <li><a  href="#" title=""><span><i aria-hidden="true" class="icon-cloud"></i></span>Blog</a> </li>
                 <li><a  href="#" title=""><span><i aria-hidden="true" class="icon-heart"></i></span>The  team</a></li>
                 <li><a  href="#" title=""><span><i aria-hidden="true" class="icon-envelope"></span></i>Contact</a></li>
               </ul>
@@ -77,6 +83,7 @@
           </div>
         </div>
       </div>
+    </header>
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
     <script>window.jQuery || document.write('<script src="Javascript/vendor/jquery-1.10.1.min.js"><\/script>')</script>
     <script src="javascript/plugins.js"></script>

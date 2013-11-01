@@ -20,6 +20,17 @@
 .button {
     .create-button();
 }
+.menu-button {
+    .create-button(@base-button-font-family, @base-button-color, @base-button-hover-color, @base-button-active-color, @base-button-background-color, @base-button-font-size);
+    padding: 10px;
+    text-transform: capitalize;
+    background-color: #242424;
+}
+.menu-button i {
+    float: left;
+    margin: 0;
+    padding: 0;
+}
 .button-group {
     position :relative;
     display: inline-block;

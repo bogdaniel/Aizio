@@ -26,7 +26,7 @@
 
     function menuElements() {
         var menuElements = s('menu');
-        menuElements.insertAdjacentHTML('afterBegin','<button type="button" id="responsiveToggle" class="button" aria-hidden="true"><i aria-hidden="true" class="icon-coffee"> </i> Menu</button>');
+        menuElements.insertAdjacentHTML('afterBegin','<button type="menu-button" id="responsiveToggle" class="menu-button" aria-hidden="true"><i aria-hidden="true" class="icon-reorder"> </i>Menu</button>');
     }
 
     function hideMenu() {

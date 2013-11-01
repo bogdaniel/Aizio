@@ -32,7 +32,7 @@
 .rem(@target-px-size, @context-px-size: @base-font-size) {
     @divide-By: unit(@context-px-size);
     @sizeValue: unit(@target-px-size);
-    @remValue: round(@sizeValue / @divide-By * 10000) / 10000;
+    @remValue: round(@sizeValue / @divide-By, 1);
     @toEm: unit(@sizeValue, px);
     @toRem: unit(@remValue, rem);
 }
