@@ -292,10 +292,6 @@ nav a.selected:hover {
   .active-responsive a:hover {
     font-size: 2em;
     opacity: .5;
-    -webkit-transition: opacity 0.25s ease-in;
-    -moz-transition: opacity 0.25s ease-in;
-    -o-transition: opacity 0.25s ease-in;
-    transition: opacity 0.25s ease-in;
   }
   .active-responsive a:hover i {
     display: none;
