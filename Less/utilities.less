@@ -1,39 +1,44 @@
 .font-size(@target-px-size, @context-px-size: @base-font-size) {
-    font-size: @toEm;
+    font-size: @toPx;
     font-size: @toRem;
     .rem(@target-px-size, @context-px-size);
 }
 .paddings(@target-px-size) {
-    padding: @toEm;
+    padding: @toPx;
     padding: @toRem;
     .rem(@target-px-size);
 }
 .padding-right(@target-px-size) {
-    padding-right: @toEm;
+    padding-right: @toPx;
     padding-right: @toRem;
     .rem(@target-px-size);
 }
 .padding-left(@target-px-size) {
-    padding-left: @toEm;
+    padding-left: @toPx;
     padding-left: @toRem;
     .rem(@target-px-size);
 }
 .padding-top(@target-px-size) {
-    padding-top: @toEm;
+    padding-top: @toPx;
     padding-top: @toRem;
     .rem(@target-px-size);
 }
 .padding-bottom(@target-px-size) {
-    padding-bottom: @toEm;
+    padding-bottom: @toPx;
     padding-bottom: @toRem;
     .rem(@target-px-size);
+}
+.line-height(@line-height-value: @base-line-height) {
+    line-height: @toPx;
+    line-height: @toRem;
+    .rem(@line-height-value);
 }
 // Rem Calculator
 .rem(@target-px-size, @context-px-size: @base-font-size) {
     @divide-By: unit(@context-px-size);
     @sizeValue: unit(@target-px-size);
     @remValue: round(@sizeValue / @divide-By, 1);
-    @toEm: unit(@sizeValue, px);
+    @toPx: unit(@sizeValue, px);
     @toRem: unit(@remValue, rem);
 }
 /**
