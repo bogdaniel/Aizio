@@ -2,14 +2,14 @@
 @import "navigation-config.less";
 .navbar [class^="icon-"], [class*=" icon-"] {
   display: block;
-  font-size: @navbar-icon-font-size;
+  .font-size(@navbar-icon-font-size);
   .line-height();
   vertical-align: middle;
   background-repeat: no-repeat;
 }
 
 .navbar {
-    background-color: @navbar-background;
+    background: @navbar-background;
     width: 100%;
     .box-shadow(0 0 0.9em #555);
 }
@@ -121,14 +121,14 @@
     display: block;
     width: auto;
     text-align: left;
-    line-height: 1.5em;
+    .line-height();
 }
 .vertical-navigation {
     float: auto;
 }
 .vertical-navigation i {
     float: left;
-    line-height: @base-line-height;
+    .line-height();
 }
 @import "responsive.less";
 @import "responsive-brand.less";

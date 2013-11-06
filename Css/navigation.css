@@ -101,14 +101,15 @@
 .navbar [class^="icon-"],
 [class*=" icon-"] {
   display: block;
-  font-size: 2em;
+  font-size: 32px;
+  font-size: 2rem;
   line-height: 24px;
   line-height: 1.5rem;
   vertical-align: middle;
   background-repeat: no-repeat;
 }
 .navbar {
-  background-color: #4d4d4d;
+  background: #4d4d4d;
   width: 100%;
   -webkit-box-shadow: 0 0 0.9em #555555;
   box-shadow: 0 0 0.9em #555555;
@@ -218,7 +219,8 @@ nav a.selected:hover {
   display: block;
   width: auto;
   text-align: left;
-  line-height: 1.5em;
+  line-height: 24px;
+  line-height: 1.5rem;
 }
 .vertical-navigation {
   float: auto;
@@ -226,6 +228,7 @@ nav a.selected:hover {
 .vertical-navigation i {
   float: left;
   line-height: 24px;
+  line-height: 1.5rem;
 }
 /*  ------------------------------  RESPONSIVE STYLES ----------------------------------------------------*/
 /*Styles for screen 768px and lower*/
