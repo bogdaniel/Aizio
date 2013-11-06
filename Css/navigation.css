@@ -103,7 +103,6 @@
   display: block;
   font-size: 32px;
   font-size: 2rem;
-  line-height: 1.5;
   vertical-align: middle;
   background-repeat: no-repeat;
 }
@@ -113,49 +112,32 @@
   -webkit-box-shadow: 0 0 0.9em #555555;
   box-shadow: 0 0 0.9em #555555;
 }
+.navbar-inner {
+  width: 100%;
+}
+/*
+Navbar Brand Styles
+ */
 .inner-navbar .brand {
   color: #ffffff;
-  font-size: 36px;
-  font-size: 2.3rem;
+  font-size: 32px;
+  font-size: 2rem;
   line-height: 1.5;
-  padding-left: 24px;
-  padding-left: 1.5rem;
   padding-right: 24px;
   padding-right: 1.5rem;
-  vertical-align: middle;
-  font-weight: bold;
-  text-align: center;
   display: block;
-  font-family: Calibri, Arial, Helvetica, sans-serif;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, sans-serif;
 }
 .inner-navbar .brand sub,
 sup {
   padding-left: 5px;
   padding-left: 0.3rem;
-  font-size: .5em;
+  font-size: 14px;
+  font-size: 0.9rem;
 }
 .inner-navbar .brand:hover {
   color: #004b67 /*#383838 */;
   text-decoration: none;
-}
-.navbar-inner {
-  width: 100%;
-}
-.navbar-theme-blue-marina {
-  background: #2aa4cf;
-}
-.navbar-theme-aizio-background,
-.active-dropdown li {
-  background: #004b67;
-}
-.navbar-theme-aizio-background a {
-  color: #fff;
-}
-.navbar-theme-aizio-background ul li a:hover {
-  color: #b2e558;
-}
-.navbar-theme-aizio-background .brand:hover {
-  color: #b2e558;
 }
 .inner-navbar nav {
   display: block;
@@ -172,30 +154,25 @@ sup {
   margin: 0 auto;
   text-align: center;
 }
-.inner-navbar nav li {
+.inner-navbar nav ul li {
   display: block;
   float: left;
-  width: 130px;
-  width: 8.1rem;
+  width: auto;
+  min-width: 130px;
+  min-width: 8.1rem;
 }
-.inner-navbar nav li:first-child,
-a {
+.inner-navbar nav li:first-child a,
+li:last-child a {
   border-left: 0;
 }
-.inner-navbar nav a {
+.inner-navbar nav ul li a {
   display: block;
   text-align: center;
   text-decoration: none;
   line-height: 1.5;
 }
 .inner-navbar nav a:hover {
-  color: #383838;
-}
-.inner-navbar nav a:active,
-nav a.selected,
-nav a:active:hover,
-nav a.selected:hover {
-  background: #08607f;
+  color: #004b67;
 }
 .inactive-dropdown {
   display: none;
@@ -210,6 +187,8 @@ nav a.selected:hover {
 .active-dropdown li {
   float: left;
   clear: both;
+  line-height: 1.5;
+  vertical-align: middle;
   /* nice blue color background-color: #2aa4cf; */
 }
 .active-dropdown li a {
@@ -224,6 +203,25 @@ nav a.selected:hover {
 .vertical-navigation i {
   float: left;
   line-height: 1.5;
+}
+/*
+Themes
+ */
+.navbar-theme-blue-marina {
+  background: #2aa4cf;
+}
+.navbar-theme-aizio-background,
+.active-dropdown li {
+  background: #004b67;
+}
+.navbar-theme-aizio-background a {
+  color: #fff;
+}
+.navbar-theme-aizio-background ul li a:hover {
+  color: #b2e558;
+}
+.navbar-theme-aizio-background .brand:hover {
+  color: #b2e558;
 }
 /*  ------------------------------  RESPONSIVE STYLES ----------------------------------------------------*/
 /*Styles for screen 768px and lower*/
