@@ -29,9 +29,9 @@
     .rem(@target-px-size);
 }
 .line-height(@line-height-value: @base-line-height) {
-    line-height: @toPx;
-    line-height: @toRem;
-    .rem(@line-height-value);
+    @stripedValue: unit(@line-height-value);
+    @finalValue: (@stripedValue / @base-font-size);
+    line-height: unit(@finalValue);
 }
 // Rem Calculator
 .rem(@target-px-size, @context-px-size: @base-font-size) {

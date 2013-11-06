@@ -103,8 +103,7 @@
   display: block;
   font-size: 32px;
   font-size: 2rem;
-  line-height: 24px;
-  line-height: 1.5rem;
+  line-height: 1.5;
   vertical-align: middle;
   background-repeat: no-repeat;
 }
@@ -118,8 +117,7 @@
   color: #ffffff;
   font-size: 36px;
   font-size: 2.3rem;
-  line-height: 24px;
-  line-height: 1.5rem;
+  line-height: 1.5;
   padding-left: 24px;
   padding-left: 1.5rem;
   padding-right: 24px;
@@ -188,8 +186,7 @@ a {
   display: block;
   text-align: center;
   text-decoration: none;
-  line-height: 24px;
-  line-height: 1.5rem;
+  line-height: 1.5;
 }
 .inner-navbar nav a:hover {
   color: #383838;
@@ -219,16 +216,14 @@ nav a.selected:hover {
   display: block;
   width: auto;
   text-align: left;
-  line-height: 24px;
-  line-height: 1.5rem;
+  line-height: 1.5;
 }
 .vertical-navigation {
   float: auto;
 }
 .vertical-navigation i {
   float: left;
-  line-height: 24px;
-  line-height: 1.5rem;
+  line-height: 1.5;
 }
 /*  ------------------------------  RESPONSIVE STYLES ----------------------------------------------------*/
 /*Styles for screen 768px and lower*/
