@@ -144,8 +144,12 @@ sup {
 .navbar-theme-blue-marina {
   background: #2aa4cf;
 }
-.navbar-theme-aizio-background {
+.navbar-theme-aizio-background,
+.active-dropdown li {
   background: #004b67;
+}
+.navbar-theme-aizio-background a {
+  color: #fff;
 }
 .navbar-theme-aizio-background ul li a:hover {
   color: #b2e558;
@@ -179,9 +183,6 @@ a {
   border-left: 0;
 }
 .inner-navbar nav a {
-  padding: 5px;
-  padding: 0.3rem;
-  color: #fff;
   display: block;
   text-align: center;
   text-decoration: none;
@@ -205,31 +206,23 @@ nav a.selected:hover {
   -webkit-border-radius: 0 0 5px 5px;
   -moz-border-radius: 0 0 5px 5px;
   border-radius: 0 0 5px 5px;
-  list-style: none;
 }
 .active-dropdown li {
   float: left;
   clear: both;
-  background-color: #2aa4cf;
+  /* nice blue color background-color: #2aa4cf; */
 }
 .active-dropdown li a {
   display: block;
-  width: 100%;
-  color: #fff;
+  width: auto;
   text-align: left;
-  text-decoration: none;
   line-height: 1.5em;
 }
 .vertical-navigation {
-  float: none !important;
+  float: auto;
 }
 .vertical-navigation i {
-  font-size: 14px !important;
-  font-size: 0.9rem !important;
-  line-height: 24px;
-  padding-right: .5em;
-}
-.vertical-navigation {
+  float: left;
   line-height: 24px;
 }
 /*  ------------------------------  RESPONSIVE STYLES ----------------------------------------------------*/
