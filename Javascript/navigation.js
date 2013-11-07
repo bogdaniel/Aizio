@@ -8,7 +8,6 @@
         }
         return elements[id];
     }
-
     function bindUIActions() {
         menuElements();
         s('dropdownToggle').onclick = function(e) {
@@ -21,7 +20,11 @@
 
             e.stopPropagation();
         };
-        //hideMenu();
+        document.addEventListener("click", function(e) {
+            hideDropDown();
+            
+            e.stopPropagation();
+        });
     }
 
     function menuElements() {
@@ -48,7 +51,7 @@
     function changeClass(r, className1 , className2) {
         var regex = new RegExp("(?:^|\\s+)" + className1 + "(?:\\s+|$)");
         if (regex.test(r.className)) {
-            r.className = r.className.replace(regex, ' '+ className2 + ' ');
+            r.className = r.className.replace(regex, ' ' + className2 + ' ');
         } else {
             r.className = r.className.replace(new RegExp("(?:^|\\s+)" + className2 + "(?:\\s+|$)"),' '+ className1 +' ');
         }
@@ -62,6 +65,11 @@
 
     function goDropDown() {
         changeClass(s('inactive-dropdown'), 'inactive-dropdown', 'active-dropdown');
+    }
+    function hideDropDown() {
+        if(hasClass(s('inactive-dropdown'), 'active-dropdown')) {
+            changeClass(s('inactive-dropdown'), 'inactive-dropdown', 'active-dropdown');
+        }
     }
 
     root.NavigationWidget = {
