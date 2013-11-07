@@ -1632,7 +1632,6 @@ sup {
 .inner-navbar nav ul li {
   display: block;
   float: left;
-  width: auto;
   min-width: 130px;
   min-width: 8.1rem;
 }
@@ -1669,15 +1668,19 @@ li:last-child a {
 .active-dropdown li a {
   display: block;
   width: auto;
-  text-align: left;
+  text-align: right;
   line-height: 1.5;
 }
-.vertical-navigation {
-  float: none;
+.inner-navbar nav .vertical-navigation li a {
+  text-align: left;
 }
 .vertical-navigation i {
-  float: left;
+  float: none;
   line-height: 1.5;
+}
+.vertical-navigation li [class^="icon-"] {
+  display: inline-block;
+  padding: 0 10px;
 }
 /*
 Themes

@@ -55,7 +55,6 @@ Navbar Brand Styles
 .inner-navbar nav ul li {
     display: block;
     float: left;
-    width: auto;
     min-width: @toPx;
     min-width: @toRem;
     .rem(130px);
@@ -97,15 +96,19 @@ Navbar Brand Styles
 .active-dropdown li a {
     display: block;
     width: auto;
+    text-align: right;
+    .line-height();
+}
+.inner-navbar nav .vertical-navigation li a {
     text-align: left;
-    .line-height();
-}
-.vertical-navigation {
-    float: none;
-}
+ }
 .vertical-navigation i {
-    float: left;
+    float: none;
     .line-height();
+}
+.vertical-navigation li [class^="icon-"] {
+    display: inline-block;
+    padding: 0 10px;
 }
 /*
 Themes
