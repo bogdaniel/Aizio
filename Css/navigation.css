@@ -1684,6 +1684,31 @@ li:last-child a {
 .horizontal-navigation li {
   float: left;
 }
+.menu-header {
+  display: block;
+  color: inherit;
+  text-align: center;
+  line-height: 1.5;
+  padding-bottom: 6px;
+  padding-top: 6px;
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
+  border-bottom-color: #dfdfdf;
+}
+.menu-header {
+  zoom: 1;
+}
+.menu-header:before {
+  content: '';
+  /* 1 */
+  display: block;
+  /* 2 */
+}
+.menu-header:after {
+  content: '';
+  display: table;
+  clear: both;
+}
 /*
 Themes
  */
