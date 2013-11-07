@@ -1631,7 +1631,6 @@ sup {
 }
 .inner-navbar nav ul li {
   display: block;
-  float: left;
   min-width: 130px;
   min-width: 8.1rem;
 }
@@ -1681,6 +1680,9 @@ li:last-child a {
 .vertical-navigation li [class^="icon-"] {
   display: inline-block;
   padding: 0 10px;
+}
+.horizontal-navigation li {
+  float: left;
 }
 /*
 Themes
